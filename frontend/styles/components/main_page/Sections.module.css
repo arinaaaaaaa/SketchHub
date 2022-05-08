@@ -1,0 +1,38 @@
+.directSection { 
+    max-width: 100%;
+    padding:100px 0 80px 0;
+}
+.title {
+    font-family: 'roboto-bold';
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: rgb(236, 236, 236);
+}
+.directsSection { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 28px;
+    margin-top: 60px;
+}
+.direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 20px;
+    background: linear-gradient(rgb(34, 34, 34), rgb(10, 10, 10));
+    padding: 30px;
+}
+.direction:hover {
+    border: 1px solid rgb(56, 56, 255);
+    box-shadow: 0px 0px 15px blue;
+}
+.direction img { width: 70px; }
+.direction p {
+    margin-top: 30px;
+    font-family: 'roboto-medium';
+    text-transform: uppercase;
+    color: rgb(236, 236, 236);
+}

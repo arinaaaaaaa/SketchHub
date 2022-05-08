@@ -1,0 +1,73 @@
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.aboutUs, .cards { width: 50%;}
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    font-family: 'roboto-bold';
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: rgb(236, 236, 236);
+    margin-bottom: 20px;
+}
+.mission {
+    width: 60%;
+    color: rgb(184, 184, 184);
+    font-family: 'roboto';
+}
+.uCan {
+    width: 60%;
+    font-family: 'roboto-light';
+    color: rgb(134, 134, 134);
+}
+.cards {
+    background-image: url("../../../public/images/torus.png.webp");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.backBlur { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28px;
+    background-color: rgba(20,20,20,0.1);
+    backdrop-filter: blur(15px);
+}
+.sectionCard {
+    max-width: 60%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(26, 26, 26);
+}
+.sectionCard:hover { 
+    border-color: rgb(56, 56, 255);
+    box-shadow: 0px 0px 30px blue;
+}
+.sectionCard img { width: 60px;}
+.sectionCard .title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'roboto';
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.description {
+    font-family: 'roboto-light';
+    font-size: 14px;
+    color: rgb(134, 134, 134);
+    margin-bottom: 20px;
+}
+.link {
+    color: rgb(184, 184, 184);
+    font-family: 'roboto-medium';
+    font-size: 14px;
+}
+.link:hover { color: white;}

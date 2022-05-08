@@ -1,0 +1,17 @@
+.joinForm {
+    display: flex;
+    background-image: url("../public/images/backgroundForm.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% 50%;;
+}
+.blurPart {
+    width: 100%;
+    background-color: rgba(19, 19, 19, 0.3);
+    backdrop-filter: blur(15px);
+}
+.joinIcon {
+    margin-top: 80px;
+    width: 50%;
+}
+.form { width: 40%; margin: 0;}

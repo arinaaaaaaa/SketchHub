@@ -1,0 +1,12 @@
+.mainContainer{
+    background: url('../public/images/background.jpg') no-repeat;
+    background-size: 100% 810px;
+}
+.blurPart {
+    position: absolute;
+    height: 810px;
+    width: 48%;
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
