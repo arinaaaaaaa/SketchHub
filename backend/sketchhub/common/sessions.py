@@ -1,7 +1,10 @@
 from typing import Callable
+from functools import wraps
+
 from flask import request, session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
+
 
 from werkzeug.datastructures import ImmutableMultiDict
 
@@ -16,6 +19,7 @@ def _get_session() -> Session:
 def session_maker(route) -> Callable:
     """Декоратор, открывающий сессию работы с БД, помещающий ее в request.args"""
 
+    @wraps(route)
     def wrapper():
         session = _get_session()
 
@@ -31,3 +35,4 @@ def session_maker(route) -> Callable:
         return result
     
     return wrapper
+    

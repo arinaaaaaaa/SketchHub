@@ -1,17 +1,51 @@
 .joinForm {
     display: flex;
-    background-image: url("../public/images/backgroundForm.png");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 50% 50%;;
-}
-.blurPart {
-    width: 100%;
-    background-color: rgba(19, 19, 19, 0.3);
-    backdrop-filter: blur(15px);
+    align-items: center;
+    column-gap: 20px;
 }
 .joinIcon {
     margin-top: 80px;
+    height: 540px;
+}
+.form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
 }
-.form { width: 40%; margin: 0;}
+.form p {
+    font-family: 'roboto-light';
+    color: rgb(236, 236, 236);
+    font-size: 27px;
+}
+.form input { 
+    box-sizing: border-box;
+    width: 380px;
+    height: 50px;
+    border: none;
+    border-radius: 45px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(20, 20, 20);
+    outline: none;
+    font-family: 'roboto-light';
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+}
+.form input:focus { 
+    text-decoration: none;
+    border-color: rgb(56, 56, 255);
+    box-shadow: 0px 0px 30px blue;
+}
+.form button {
+    font-family: 'roboto-medium';
+    margin-top: 20px;
+    width: 380px;
+    height: 55px;
+    background-color: rgb(56, 56, 255);
+    border: none;
+    border-radius: 45px;
+    color: rgb(236, 236, 236);
+    font-size: 16px;
+}
+.form button:hover { box-shadow: 0px 0px 30px blue; }
